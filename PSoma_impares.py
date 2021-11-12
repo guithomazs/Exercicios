@@ -5,9 +5,7 @@ a = int(input())
 b = int(input())
 soma: int = 0
 if a > b:
-    inversor = a
-    a = b
-    b = inversor
+    a, b = b, a
 for i in range (a, b):
     if i % 2 != 0:
         soma = soma + i
